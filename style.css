@@ -5,22 +5,61 @@ html, body {
   padding: 0;
 }
 
-#test{
-  position: relative;
-  background-color: darkred;
-  width: 540px;
-  transform: translate(-50%, 0) !important;
-  left: 50% !important;
-}
 
 canvas {
   z-index: 1 !important;
   top: 0 !important;
 }
 
+
+#test{
+  position: relative;
+  background-color: darkred;
+  width: 540px !important;
+  height: 675px !important;
+  transform: translate(-50%, 0) !important;
+  left: 50% !important;
+}
+
 .upper-wordings-wrapper{
   position: absolute !important;
   width: 540px !important;
   top: 0 !important;
-  background-color: darkblue;
+  padding: 20px 20px 20px 20px !important;
+}
+.upper-wordings-wrapper #first-text{
+  width: 90% !important;
+}
+.upper-wordings-wrapper p{
+  font-family: roc-grotesk, sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.upper-wordings-wrapper #arrow-icon{
+  text-align: right !important;
+  font-size: 50px !important;
+  padding-top: 0px !important;
+}
+.heading-row{
+  margin-top: 50px !important;
+}
+h2{
+  text-transform: uppercase !important;
+  color: white !important;
+  font-family: roc-grotesk-extrawide, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-size: 28px !important;
+}
+
+.bottom-wording-wrapper{
+  position: absolute !important;
+  width: 540px !important;
+  bottom: 0 !important;
+  padding: 20px 20px 10px 20px !important;
+}
+.bottom-wording-wrapper p{
+  font-family: roc-grotesk, sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }

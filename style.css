@@ -1,11 +1,26 @@
+@import url("https://use.typekit.net/wcs6mhl.css");
+
 html, body {
   margin: 0;
   padding: 0;
 }
 
-canvas {
-  position: absolute !important;
+#test{
+  position: relative;
+  background-color: darkred;
+  width: 540px;
   transform: translate(-50%, 0) !important;
   left: 50% !important;
-  display: block !important;
+}
+
+canvas {
+  z-index: 1 !important;
+  top: 0 !important;
+}
+
+.upper-wordings-wrapper{
+  position: absolute !important;
+  width: 540px !important;
+  top: 0 !important;
+  background-color: darkblue;
 }

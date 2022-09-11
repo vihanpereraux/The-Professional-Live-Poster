@@ -62,3 +62,7 @@ h2{
   font-weight: 400 !important;
   font-style: normal !important;
 }
+
+video{
+  display: none !important;
+}

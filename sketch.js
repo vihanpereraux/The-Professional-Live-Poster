@@ -1,6 +1,7 @@
-var posterWidth ;
-var posterHeight ;
-var capture ;
+var posterWidth;
+var posterHeight;
+var capture;
+var seriosuly;
 
 function setup() {
   posterWidth = 1080/2;
@@ -11,6 +12,9 @@ function setup() {
 
   capture = createCapture(VIDEO);
   capture.size(posterWidth, posterHeight);
+
+  seriosuly = new Seriously();
+  seriosuly.go();
 }
 
 function draw() {

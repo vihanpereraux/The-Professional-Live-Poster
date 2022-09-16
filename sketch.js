@@ -2,40 +2,48 @@ var posterWidth;
 var posterHeight;
 var capture;
 var seriosuly;
+var fr;
 
 function setup() {
+  // psoter ratios
   posterWidth = 1080/2;
   posterHeight = 1350/2;
 
-  var posterBackground = createCanvas(posterWidth, posterHeight, WEBGL);
+  // setting the canvas
+  var posterBackground = createCanvas(posterWidth, posterHeight);
   posterBackground.id('poster-background');
   posterBackground.parent("test");
+  background(0);
+  fr = 5;
+  frameRate(fr);
 
+  // getting live feed
   capture = createCapture(VIDEO);
   capture.size(posterWidth, posterHeight);
-  capture.id('live-feed')
-
-  seriosuly = new Seriously();
-  var source = seriosuly.source('#live-feed');
-  var target = seriosuly.target('#poster-background')
-  seriosuly.go();
+  capture.id('live-feed');
 }
 
 function draw() {
+
+  // layer 01 
   clear(); 
-  translate(-500, -340, 0); //only for webgl parameter
-  image(capture, 0, 0, posterWidth*2.3, posterHeight*1);
-  // filter(GRAY);
+  // translate(-500, -340, 0); //only for webgl parameter
+  image(capture, -200, 0, posterWidth*1.7, posterHeight*1); //without webgl params
+  // image(capture, 0, 0, posterWidth*2.3, posterHeight*1); //with webgl params
+  filter(GRAY);
+  drawingContext.filter = 'blur(10px)';
+  console.log(frameRate()); //debugging
   
-  translate(0, 0, 0);
+  // layer 02 
   noFill();
-  stroke(255, 0, 0);
-  strokeWeight(.8);
-  circle(posterWidth, 0, 300);
+  stroke(255);
+  strokeWeight(2);
+  circle(0, posterHeight, 450);
 
-
-  // noFill();
-  // stroke(255);
-  // strokeWeight(.8);
-  // circle(posterWidth, 0, 600);
+  // layer 03
+  noFill();
+  stroke(255);
+  strokeWeight(2);
+  circle(posterWidth, 0, 600);
+  
 }

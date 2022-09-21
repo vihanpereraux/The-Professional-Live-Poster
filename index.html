@@ -23,58 +23,65 @@
     <!-- importing serious js and effects -->
     <script src="libraries/seriously.js"></script>
     <script src="libraries/seriously.blur.js"></script>
+    <script src="libraries/FileSaver.js"></script>
+    <script src="controller.js"></script>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   </head>
 
   <body>
-    <div id="test">
-      <div class="container upper-wordings-wrapper">
-        <!-- upper text row -->
-        <div class="row">
-          <div class="col-6">
-            <p id="first-text">
-              It's when you really start to fear 
-              death that you learn to appreciate life
-            </p>
+      <div id="test" class="mx-auto d-block">
+        <div class="container upper-wordings-wrapper">
+          <!-- upper text row -->
+          <div class="row">
+            <div class="col-6">
+              <p id="first-text">
+                It's when you really start to fear 
+                death that you learn to appreciate life
+              </p>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-7">
+                  <p id="second-text">
+                    Is life always this hard, or is it just 
+                    when you are a kid
+                  </p>
+                </div>
+                <div class="col-5">
+                  <p id="arrow-icon">🡥</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-6">
-            <div class="row">
-              <div class="col-7">
-                <p id="second-text">
-                  Is life always this hard, or is it just 
-                  when you are a kid
-                </p>
-              </div>
-              <div class="col-5">
-                <p id="arrow-icon">🡥</p>
-              </div>
+          <!-- heading row -->
+          <div class="row heading-row">
+            <div class="col-10">
+              <h2>Vihan the proffessional</h2>
             </div>
           </div>
         </div>
 
-        <!-- heading row -->
-        <div class="row heading-row">
-          <div class="col-10">
-            <h2>Vihan the proffessional</h2>
+        <!-- p5 js canvas is here -->
+
+        <!-- bottom text row -->
+        <div class="container bottom-wording-wrapper">
+          <div class="row">
+            <div class="col-7">
+              <p>When it's tough like this. You know it's gonna be
+                ugly. Better make it quick, or else you'll be here all
+                day listing to his crap.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- p5 js canvas is here -->
-
-      <!-- bottom text row -->
-      <div class="container bottom-wording-wrapper">
-        <div class="row">
-          <div class="col-7">
-            <p>When it's tough like this. You know it's gonna be
-              ugly. Better make it quick, or else you'll be here all
-              day listing to his crap.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
+    <button id="get">Download</button>
+
     <script src="sketch.js"></script>
+    <script src="controller.js"></script>
   </body>
 </html>

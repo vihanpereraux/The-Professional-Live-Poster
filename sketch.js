@@ -6,7 +6,7 @@ var fr;
 var layerOneRandomPosition;
 var layerOneRandomRadius;
 var layerTwoRandomPosition;
-var layerTwoRandomRadius;
+var layerTwoRandomRadius; 
 
 function setup() {
   // psoter ratios

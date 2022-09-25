@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/wcs6mhl.css");
 
+/* html and body styles */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,20 +9,26 @@ html, body {
   overflow-x: hidden !important;
   width: 100vw !important;
 }
+/* end of html and body styles */
 
 
+/* canvas styles */
 canvas {
   z-index: 1 !important;
   top: 0 !important;
 }
+/* canvas styles */
 
 
+/* poster wrapper */
 #test{
   background-color: rgb(73, 73, 73) !important;
   width: 540px !important;
   height: 675px !important;
 }
+/* end of poster wrapper */
 
+/* upper wordings stylings */
 .upper-wordings-wrapper{
   position: absolute !important;
   width: 540px !important;
@@ -45,6 +52,9 @@ canvas {
   padding-top: 0px !important;
   color: white !important;
 }
+/* upper wordings stylings */
+
+/* main heading stylings */
 .heading-row{
   margin-top: 50px !important;
 }
@@ -57,7 +67,9 @@ h2{
   font-size: 28px !important;
   color: white !important;
 }
+/* end of main heading stylings */
 
+/* bottom wordings stylings */
 .bottom-wording-wrapper{
   position: absolute !important;
   width: 540px !important;
@@ -70,16 +82,49 @@ h2{
   font-style: normal !important;
   color: white !important;
 }
+/* end of bottom wordings stylings */
 
+
+/* removing unwanted videos */
 video{
   display: none !important;
 }
+/* end of removing unwanted videos */
 
 
+/* control panel stylings */
 .control-panel{
   margin-top: 50px !important;
   color: white !important;
 }
+
+/* input field stylings */
+.who-are-you-input{
+  font-size: 13px !important;
+  height: 50px !important;
+  border-radius: 0px !important;
+  color: black !important;
+  opacity: 1 !important;
+  font-family: roc-grotesk-extrawide, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase !important; 
+}
+.who-are-you-input:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+.who-are-you-input::placeholder{
+  color: black !important;
+  opacity: 1 !important;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+}
+/* end of input field stylings */
+
+/* button stylings */
 .control-panel .download-btn{
   background: none !important;
   color: white !important;
@@ -114,5 +159,6 @@ video{
   -webkit-text-stroke-color: black;
   border: none !important;
 }
-
+/* end of button stylings */
+/* end of control panel stylings */
 

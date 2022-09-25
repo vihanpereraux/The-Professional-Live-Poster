@@ -5,7 +5,7 @@ document.getElementById("get").onclick = function() {
 
 // download function for button press event
 window.addEventListener('keydown', (event) => {
-    if(event.code == "KeyD"){
+    if(event.code == "Enter"){
         convertHtml2Canvas();
     }
 });

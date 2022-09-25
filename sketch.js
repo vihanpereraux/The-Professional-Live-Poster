@@ -6,7 +6,9 @@ var fr;
 var layerOneRandomPosition;
 var layerOneRandomRadius;
 var layerTwoRandomPosition;
-var layerTwoRandomRadius; 
+var layerTwoRandomRadius;
+var mainHeadingInput; 
+var mainHeading; 
 
 function setup() {
   // psoter ratios
@@ -25,11 +27,20 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(posterWidth, posterHeight);
   capture.id('live-feed');
+
+  // setting the default value
+  localStorage.setItem("savedMainHeading", "Luke the professional");
 }
 
 function draw() {
-  clear(); 
+  clear();  
   
+  // applying custom names
+  mainHeading = document.getElementById("main-heading"); 
+  mainHeadingInput = document.getElementById('main-heading-input').value;
+  localStorage.setItem("savedMainHeading", mainHeadingInput);
+  mainHeading.innerHTML = localStorage.getItem('savedMainHeading');
+
   // layer 01 
   drawingContext.filter = 'blur(15px)'; // applying the blur effect
   scale(-1, 1);

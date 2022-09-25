@@ -78,10 +78,41 @@ video{
 
 .control-panel{
   margin-top: 50px !important;
-  font-family: roc-grotesk, sans-serif !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
   color: white !important;
+}
+.control-panel .download-btn{
+  background: none !important;
+  color: white !important;
+  border-color: white !important;
+  border-radius: 0px !important;
+  border-width: 1.5px !important;
+  height: 50px !important;
+  text-transform: uppercase !important; 
+  font-family: roc-grotesk-extrawide, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  transition: all .08s linear !important;
+  margin-top: 20px !important;
+}
+.control-panel .download-btn:hover{
+  color: black !important;
+  background-color: white !important;
+  font-family: roc-grotesk-extrawide, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+  border: none !important;
+}
+.control-panel .download-btn:focus{
+  color: black !important;
+  background-color: white !important;
+  font-family: roc-grotesk-extrawide, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+  border: none !important;
 }
 
 

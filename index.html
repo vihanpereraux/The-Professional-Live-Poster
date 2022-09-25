@@ -21,8 +21,8 @@
     <script src="libraries/p5.sound.min.js"></script>
     
     <!-- importing serious js and effects -->
-    <script src="libraries/seriously.js"></script>
-    <script src="libraries/seriously.blur.js"></script>
+    <!-- <script src="libraries/seriously.js"></script>
+    <script src="libraries/seriously.blur.js"></script> -->
     <script src="libraries/FileSaver.js"></script>
     <script src="controller.js"></script>
 
@@ -79,7 +79,20 @@
         </div>
     </div>
 
-    <button id="get">Download</button>
+    <!-- control panel -->
+    <div class="container control-panel">
+      <div class="row">
+        <div class="col-12">
+          <button class="mx-auto d-block btn btn-primary w-50" id="get">Download</button>
+
+          <form>
+            <input type="text" class="w-50 form-control mx-auto d-block mt-3" placeholder="Who are you ?">
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
 
     <script src="sketch.js"></script>
     <script src="controller.js"></script>

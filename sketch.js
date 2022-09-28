@@ -9,9 +9,15 @@ var layerTwoRandomPosition;
 var layerTwoRandomRadius;
 var mainHeadingInput; 
 var mainHeading; 
+var textBlockOneColor;
+var textBlockTwoColor;
+var arrowIconColor;
+var mainHeadingColor;
+var textBlockThreeColor;
+
 
 function setup() {
-  // psoter ratios
+  // poster ratios
   posterWidth = 1080/2;
   posterHeight = 1350/2;
 
@@ -30,6 +36,11 @@ function setup() {
 
   // setting the default value
   localStorage.setItem("savedMainHeading", "Luke the professional");
+  localStorage.setItem("textBlockOneColor", '#ffffff');
+  localStorage.setItem("textBlockTwoColor", '#ffffff');
+  localStorage.setItem("textBlockThreeColor", '#ffffff');
+  localStorage.setItem("arrowIconColor", '#ffffff');
+  localStorage.setItem("mainHeadingColor", '#ffffff');
 }
 
 function draw() {
@@ -40,6 +51,8 @@ function draw() {
   mainHeadingInput = document.getElementById('main-heading-input').value;
   localStorage.setItem("savedMainHeading", mainHeadingInput);
   mainHeading.innerHTML = localStorage.getItem('savedMainHeading');
+
+  controlColors();
 
   // layer 01 
   drawingContext.filter = 'blur(15px)'; // applying the blur effect
@@ -62,6 +75,30 @@ function draw() {
   noFill();
   stroke(255);
   strokeWeight(2);
-  circle(random(posterWidth, 0), 0, random(400, 600));
-  
+  circle(random(posterWidth, 0), 0, random(400, 600)); 
+}
+
+
+function controlColors(){
+  // calling all the properties
+  textBlockOneColor = localStorage.getItem('textBlockOneColor');
+  textBlockTwoColor = localStorage.getItem('textBlockOneColor');
+  textBlockThreeColor = localStorage.getItem('textBlockOneColor');
+  arrowIconColor = localStorage.getItem('textBlockOneColor');
+  mainHeadingColor = localStorage.getItem('textBlockOneColor');
+
+  var textBlockOne = document.getElementById('first-text');
+  textBlockOne.style.color = textBlockOneColor;
+
+  var textBlockTwo = document.getElementById('second-text');
+  textBlockTwo.style.color = textBlockTwoColor;
+
+  var arrowIcon = document.getElementById('arrow-icon');
+  arrowIcon.style.color = arrowIconColor;
+
+  var textBlockThree = document.getElementById('bottom-text');
+  textBlockThree.style.color = textBlockThreeColor;
+
+  var mainHeading = document.getElementById('main-heading');
+  mainHeading.style.color = mainHeadingColor;
 }

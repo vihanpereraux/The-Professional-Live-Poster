@@ -42,23 +42,19 @@ canvas {
   width: 540px !important;
   top: 0 !important;
   padding: 20px 20px 20px 20px !important;
-  color: white !important;
 }
 .upper-wordings-wrapper #first-text{
   width: 90% !important;
-  color: white !important;
 }
 .upper-wordings-wrapper p{
   font-family: roc-grotesk, sans-serif !important;
   font-weight: 400 !important;
   font-style: normal !important;
-  color: white !important;
 }
 .upper-wordings-wrapper #arrow-icon{
   text-align: right !important;
   font-size: 50px !important;
   padding-top: 0px !important;
-  color: white !important;
 }
 /* upper wordings stylings */
 
@@ -68,12 +64,11 @@ canvas {
 }
 h2{
   text-transform: uppercase !important;
-  color: white !important;
+  /* color: white !important; */
   font-family: roc-grotesk-extrawide, sans-serif !important;
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 28px !important;
-  color: white !important;
 }
 /* end of main heading stylings */
 
@@ -88,7 +83,6 @@ h2{
   font-family: roc-grotesk, sans-serif !important;
   font-weight: 400 !important;
   font-style: normal !important;
-  color: white !important;
 }
 /* end of bottom wordings stylings */
 

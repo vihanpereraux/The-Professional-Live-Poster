@@ -9,6 +9,7 @@ var layerTwoRandomPosition;
 var layerTwoRandomRadius;
 var mainHeadingInput; 
 var mainHeading; 
+
 var textBlockOneColor;
 var textBlockTwoColor;
 var arrowIconColor;
@@ -80,12 +81,16 @@ function draw() {
 
 
 function controlColors(){
+
+  var mainHeadingColorValue = document.getElementById("main-heading-color").value ;
+  localStorage.setItem("mainHeadingColor", mainHeadingColorValue);
+
   // calling all the properties
   textBlockOneColor = localStorage.getItem('textBlockOneColor');
   textBlockTwoColor = localStorage.getItem('textBlockOneColor');
   textBlockThreeColor = localStorage.getItem('textBlockOneColor');
   arrowIconColor = localStorage.getItem('textBlockOneColor');
-  mainHeadingColor = localStorage.getItem('textBlockOneColor');
+  mainHeadingColor = localStorage.getItem('mainHeadingColor');
 
   var textBlockOne = document.getElementById('first-text');
   textBlockOne.style.color = textBlockOneColor;

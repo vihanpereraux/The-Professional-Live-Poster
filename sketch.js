@@ -81,17 +81,28 @@ function draw() {
 
 
 function controlColors(){
+  var textBlockOneColorValue = document.getElementById("text-block-one-color").value;
+  localStorage.setItem("textBlockOneColor", textBlockOneColorValue);
 
-  var mainHeadingColorValue = document.getElementById("main-heading-color").value ;
+  var textBlockTwoColorValue = document.getElementById("text-block-two-color").value;
+  localStorage.setItem("textBlockTwoColor", textBlockTwoColorValue);
+
+  var arrowIconColorValue = document.getElementById("arrow-icon-color").value;
+  localStorage.setItem("arrowIconColor", arrowIconColorValue);
+
+  var mainHeadingColorValue = document.getElementById("main-heading-color").value;
   localStorage.setItem("mainHeadingColor", mainHeadingColorValue);
+
+  var textBlockThreeColorValue = document.getElementById("text-block-three-color").value;
+  localStorage.setItem("textBlockThreeColor", textBlockThreeColorValue);
 
   // calling all the properties
   textBlockOneColor = localStorage.getItem('textBlockOneColor');
-  textBlockTwoColor = localStorage.getItem('textBlockOneColor');
-  textBlockThreeColor = localStorage.getItem('textBlockOneColor');
-  arrowIconColor = localStorage.getItem('textBlockOneColor');
+  textBlockTwoColor = localStorage.getItem('textBlockTwoColor');
   mainHeadingColor = localStorage.getItem('mainHeadingColor');
-
+  arrowIconColor = localStorage.getItem('arrowIconColor');
+  textBlockThreeColor = localStorage.getItem('textBlockThreeColor');
+  
   var textBlockOne = document.getElementById('first-text');
   textBlockOne.style.color = textBlockOneColor;
 
